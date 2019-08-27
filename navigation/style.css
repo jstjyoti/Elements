@@ -1,0 +1,125 @@
+
+nav ul{
+    list-style-type: none;
+    background-color:#F2E1D1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav h2{
+    margin:0 15px;
+    padding: 5px 0 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+}
+nav li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px 5px;
+}
+nav li > a::after{
+    content: '\f107';
+    font-family: FontAwesome;
+    padding-left: 10px;
+    padding-right:20px;
+}
+
+nav li .submenu-container{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px 0;
+    top: 35px;
+    display: none;
+    box-shadow: 0 0 5px #aaa;
+}
+
+nav li:hover .submenu-container{
+    display: block;
+    
+}
+
+nav li ul.submenu{
+    background-color: #fff;
+    padding: 0;
+    width: 320px;
+    margin-top: 9px;
+}
+
+nav li ul.submenu li{
+    display: block;
+
+}
+
+.submenu-wraper{
+    position: relative;
+    width: 320px;
+}
+
+
+nav li ul.submenu li > a{
+    border-left: 4px solid transparent;
+    padding: 15px;
+}
+
+nav li ul.submenu li > a:hover{
+    border-left: 4px solid #6165A5;
+    background-color: rgba(97, 102, 165, 0.068);
+}
+
+nav li ul.submenu li .child{
+    position: absolute;
+    left: 99%;
+    width: 320px;
+    top: -21px;
+    bottom: -21px;
+    border: 1px solid #ddd;
+    border-left: none;
+    display: none;
+    background-color: #fff;
+    box-shadow: 5px 0 5px #aaa;
+}
+
+nav li ul.submenu li:hover .child{
+    display: block;
+}
+
+.child-text-wraper{
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    border-left: 1px solid #ddd;
+}
+nav li ul.submenu li > a::after{
+    content: '\f105';
+    font-family: FontAwesome;
+    padding-left: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+.child-text-wraper a{
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.notch{
+    height:0;
+    width:0;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}

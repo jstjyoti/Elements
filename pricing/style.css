@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style : normal;
+         src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+         src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+               url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  }
+
+  ul.container{
+    position:relative;
+    list-style-type: none;
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    padding:50px;
+    width:80%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+
+}
+h1{
+  text-align:center;
+  text-transform:uppercase;
+}
+li.card{
+    flex-basis: auto;
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    text-align:center;
+    box-shadow: 0 5px 10px #aaa;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+li.card:hover{
+    background-color: #fff;
+    transform: scale(1.12);
+}
+
+.card h1{
+    margin:0;
+    padding: 15px 0 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+li.card:hover ~ h1{
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+li.card:hover > ul.content li{
+    width:100%;
+    margin:0px;
+}
+
+.blue h1, .blue ul.content li{
+    border-bottom-color:  #0C4961;
+}
+
+.red h1, .red ul.content li{
+    border-bottom-color: #B2483C;
+}
+
+.green h1, .green ul.content li{
+    border-bottom-color: #639E38;
+}
+
+.blue h1, .blue .up::before, .blue .btn-signup{
+    background-color: #03658C;
+}
+
+.red h1, .red .up::before, .red .btn-signup{
+    background-color: #D74E3D;
+}
+
+.green h1, .green .up::before, .green .btn-signup{
+    background-color: #6EC33F;
+}
+
+.header{
+    font-size:60px;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+}
+.up{
+  position: absolute;
+  font-size: 28px;
+  top:10%;
+  right: -50px;
+  display: inline-block;
+}
+.up::before{
+  content: ' ';
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  padding:1px;
+}
+
+.header::before{
+    content: '$';
+    position: absolute;
+    bottom: 9%;
+    left:-30%;
+    font-size: 42px;
+}
+
+.header::after{
+    content: '/mo';
+    position: absolute;
+    bottom: 15%;
+    right: -60px;
+    font-size: 24px;
+}
+
+.blue .header{
+    color: #03658C;
+}
+
+.red .header{
+    color: #D74E3D;
+}
+
+.green .header{
+    color: #6EC33F;
+}
+
+
+ul.content{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.content li{
+    display: block;
+    margin-left:15px;
+    width:90%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    text-align:center;
+    color: #999;
+    padding: 20px 0 5px 0;
+}
+.btn{
+
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top:10%;
+    margin-bottom:5%;
+    color:#fff;
+    border: 5px solid transparent;
+    font-weight:bold;
+}
+
+.blue .btn{
+    border: 2px solid #03658C;
+    background-color:  #03658C;
+}
+.blue .btn:hover{
+    background-color:  #0C4961;
+    border-color:  #0C4961;
+}
+.red .btn{
+    border: 2px solid #D74E3D;
+    background-color:#D74E3D;
+}
+.red .btn:hover{
+    background-color: #B2483C;
+    border-color: #B2483C;
+}
+.green .btn{
+    border: 2px solid #6EC33F;
+    background-color:  #6EC33F;
+}
+.green .btn:hover{
+    background-color: #639E38;
+    border-color: #639E38;
+}  
